@@ -3,210 +3,644 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV LISNAWATI</title>
+    <title>Portfolio | Lisnawati</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
+    <!-- CSS sendiri -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Portofolio Lisnawati</a>
+        <a class="navbar-brand fw-bold" href="#beranda">
+          Lisnawati<span>.</span>
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-label="Buka navigasi"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#beranda">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#proyek-bootstrap">Proyek Bootstrap</a>
+              <a class="nav-link" href="#tentang">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#faq-bootstrap">FAQ</a>
+              <a class="nav-link" href="#pendidikan">Pendidikan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#keahlian">Keahlian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyek">Proyek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
             </li>
           </ul>
+
+          <button
+            id="darkModeButton"
+            class="btn btn-outline-light btn-sm ms-lg-3 mt-2 mt-lg-0"
+            type="button"
+          >
+            🌙 Dark Mode
+          </button>
         </div>
       </div>
     </nav>
 
+    <!-- CAROUSEL -->
+    <section id="beranda" class="hero-section">
+      <div id="carouselCV" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselCV"
+            data-bs-slide-to="0"
+            class="active"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCV"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselCV"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero-slide slide-one">
+              <p class="hero-label">PERSONAL PORTFOLIO</p>
+              <h1>Selamat Datang di Portfolio Saya</h1>
+              <p>
+                Mengenal perjalanan, pendidikan, dan karya saya dalam bidang
+                teknologi.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="hero-slide slide-two">
+              <p class="hero-label">ABOUT ME</p>
+              <h1>Terus Belajar dan Berkembang</h1>
+              <p>Membangun kemampuan melalui proses belajar dan pengalaman.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="hero-slide slide-three">
+              <p class="hero-label">MY INTEREST</p>
+              <h1>Technology & Creativity</h1>
+              <p>
+                Memiliki ketertarikan pada pemrograman dan pengembangan website.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselCV"
+          data-bs-slide="prev"
+          aria-label="Slide sebelumnya"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselCV"
+          data-bs-slide="next"
+          aria-label="Slide berikutnya"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container main-container">
+      <div class="row g-4">
+        <!-- SIDEBAR KIRI -->
+        <aside class="col-lg-4">
+          <div class="sidebar-card">
+            <div class="photo-wrapper">
+              <img
+                src="./foto.jpg"
+                alt="Foto profil Lisnawati"
+                class="profile-photo"
+              />
+            </div>
+
+            <h2 class="profile-name">Lisnawati</h2>
+            <p class="profile-job">
+              Mahasiswi Teknologi Rekayasa Perangkat Lunak
+            </p>
+
+            <div class="sidebar-line"></div>
+
+            <h3 class="sidebar-heading">Profil Singkat</h3>
+            <p class="sidebar-text">
+              Mahasiswi yang memiliki ketertarikan dalam bidang teknologi,
+              pemrograman, dan pembuatan website. Senang mempelajari hal baru
+              dan mengembangkan kemampuan melalui berbagai proyek.
+            </p>
+
+            <div class="sidebar-line"></div>
+
+            <h3 class="sidebar-heading">Informasi</h3>
+
+            <div class="sidebar-info">
+              <p><strong>Status</strong></p>
+              <p>Mahasiswi</p>
+            </div>
+
+            <div class="sidebar-info">
+              <p><strong>Program Studi</strong></p>
+              <p>Teknologi Rekayasa Perangkat Lunak</p>
+            </div>
+
+            <div class="sidebar-info">
+              <p><strong>Perguruan Tinggi</strong></p>
+              <p>Politeknik Manahijul Huda</p>
+            </div>
+
+            <!-- BIODATA PRIBADI TAMBAHAN -->
+            <div class="sidebar-line"></div>
+
+            <h3 class="sidebar-heading">Biodata Pribadi</h3>
+
+            <div class="sidebar-info">
+              <p><strong>Tempat, Tanggal Lahir</strong></p>
+              <p>Ciamis, 22 April 2007</p>
+            </div>
+
+            <div class="sidebar-info">
+              <p><strong>Jenis Kelamin</strong></p>
+              <p>Perempuan</p>
+            </div>
+
+            <div class="sidebar-info">
+              <p><strong>Alamat</strong></p>
+              <p>Ciamis</p>
+            </div>
+
+            <div class="sidebar-info">
+              <p><strong>Kewarganegaraan</strong></p>
+              <p>Indonesia</p>
+            </div>
+
+            <div class="sidebar-line"></div>
+
+            <h3 class="sidebar-heading">Minat Bidang</h3>
+
+            <div class="interest-list">
+              <span>Web Development</span>
+              <span>Programming</span>
+              <span>Technology</span>
+              <span>Creative Learning</span>
+            </div>
+          </div>
+        </aside>
+
+        <!-- KONTEN KANAN -->
+        <div class="col-lg-8">
+          <div class="content-card">
+            <!-- TENTANG SAYA -->
+            <section id="tentang" class="content-section">
+              <p class="section-label">PERKENALAN</p>
+              <h2 class="section-title">Tentang Saya</h2>
+              <p>
+                Halo, saya Lisnawati, mahasiswi Program Studi Teknologi Rekayasa
+                Perangkat Lunak di Politeknik Manahijul Huda. Saya memiliki
+                ketertarikan pada dunia teknologi, khususnya pengembangan
+                website dan pemrograman.
+              </p>
+              <p>
+                Melalui perkuliahan dan berbagai tugas proyek, saya terus
+                belajar memahami dasar pengembangan aplikasi, membuat tampilan
+                website, serta mengembangkan kemampuan di bidang teknologi.
+              </p>
+            </section>
+
+            <!-- PENDIDIKAN -->
+            <section id="pendidikan" class="content-section">
+              <p class="section-label">LATAR BELAKANG</p>
+              <h2 class="section-title">Riwayat Pendidikan</h2>
+
+              <div class="table-responsive">
+                <table class="table education-table">
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>Nama Institusi</th>
+                      <th>Tahun</th>
+                      <th>Keterangan</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>MIS Dayeuhdatar</td>
+                      <td>2013–2019</td>
+                      <td><span class="status-badge">Lulus</span></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>MTs Negeri 2 Ciamis</td>
+                      <td>2019–2022</td>
+                      <td><span class="status-badge">Lulus</span></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>MAS Nurul Huda Kawali</td>
+                      <td>2022–2025</td>
+                      <td><span class="status-badge">Lulus</span></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Politeknik Manahijul Huda</td>
+                      <td>Saat ini</td>
+                      <td>
+                        <span class="status-badge ongoing">Berjalan</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <!-- PENGALAMAN -->
+            <section class="content-section">
+              <p class="section-label">PENGALAMAN</p>
+              <h2 class="section-title">Pengalaman Proyek</h2>
+              <div class="experience-box">
+                <h5>Project Website Kewirausahaan</h5>
+                <p class="experience-subtitle">Proyek perkuliahan</p>
+                <p>
+                  Membuat website sederhana bertema kewirausahaan atau toko.
+                  Dalam proyek tersebut, saya belajar menyusun tampilan website,
+                  menampilkan informasi, serta menerapkan dasar HTML dan CSS.
+                </p>
+              </div>
+            </section>
+
+            <!-- KEAHLIAN -->
+            <section id="keahlian" class="content-section">
+              <p class="section-label">MY SKILLS</p>
+              <h2 class="section-title">Keahlian</h2>
+              <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+                <span>JavaScript Dasar</span>
+                <span>MySQL Dasar</span>
+                <span>Web Development</span>
+              </div>
+              <p class="skill-note">
+                Kemampuan yang sedang dipelajari dan terus dikembangkan.
+              </p>
+            </section>
+
+            <!-- PROYEK -->
+            <section id="proyek" class="content-section">
+              <p class="section-label">HASIL PEMBELAJARAN</p>
+              <h2 class="section-title">Portofolio & Proyek</h2>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="project-card">
+                    <div class="project-icon">01</div>
+                    <h5>Website Kewirausahaan</h5>
+                    <p>
+                      Website toko sederhana yang dibuat dengan menerapkan dasar
+                      HTML dan CSS.
+                    </p>
+                    <span class="project-tag">HTML & CSS</span>
+                    <button
+                      class="btn btn-sm btn-primary mt-3"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModalOne"
+                    >
+                      Lihat Detail
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="project-card">
+                    <div class="project-icon">02</div>
+                    <h5>CV Portfolio Website</h5>
+                    <p>
+                      Website profil pribadi yang menampilkan informasi diri,
+                      pendidikan, dan proyek menggunakan Bootstrap.
+                    </p>
+                    <span class="project-tag">Bootstrap</span>
+                    <button
+                      class="btn btn-sm btn-primary mt-3"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModalTwo"
+                    >
+                      Lihat Detail
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- COLLAPSIBLE -->
+            <section class="content-section">
+              <p class="section-label">INFORMASI TAMBAHAN</p>
+              <h2 class="section-title">Keahlian yang Dipelajari</h2>
+              <div class="accordion" id="skillAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#skillOne"
+                    >
+                      Dasar Pengembangan Web
+                    </button>
+                  </h2>
+                  <div
+                    id="skillOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#skillAccordion"
+                  >
+                    <div class="accordion-body">
+                      Mempelajari HTML dan CSS untuk membuat struktur serta
+                      tampilan halaman website.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#skillTwo"
+                    >
+                      Framework Bootstrap
+                    </button>
+                  </h2>
+                  <div
+                    id="skillTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#skillAccordion"
+                  >
+                    <div class="accordion-body">
+                      Mempelajari penggunaan komponen Bootstrap untuk membuat
+                      website yang responsif.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#skillThree"
+                    >
+                      Pemrograman
+                    </button>
+                  </h2>
+                  <div
+                    id="skillThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#skillAccordion"
+                  >
+                    <div class="accordion-body">
+                      Terus mempelajari dasar logika pemrograman dan
+                      pengembangan perangkat lunak.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- MOTIVASI JQUERY -->
+            <section class="content-section">
+              <p class="section-label">MOTIVASI</p>
+              <h2 class="section-title">Terus Berkembang</h2>
+              <p>
+                Saya percaya bahwa kemampuan dapat terus berkembang melalui
+                kemauan belajar, latihan, dan pengalaman.
+              </p>
+              <button type="button" id="tombolMotivasi" class="btn btn-primary">
+                Lihat Motivasi
+              </button>
+              <div id="pesanMotivasi" class="motivation-box">
+                Terus belajar, berani mencoba, dan jangan berhenti mengembangkan
+                kemampuan.
+              </div>
+            </section>
+
+            <!-- KONTAK -->
+            <section id="kontak" class="content-section">
+              <p class="section-label">LET'S CONNECT</p>
+              <h2 class="section-title">Hubungi Saya</h2>
+              <p>
+                Terima kasih telah mengunjungi portfolio saya. Silakan hubungi
+                saya melalui media berikut.
+              </p>
+              <div class="contact-links">
+                <a href="mailto:emailkamu@example.com" class="contact-button">
+                  <span>✉</span> Email
+                </a>
+                <a
+                  href="https://wa.me/621224820071"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-button"
+                >
+                  <span>☏</span> WhatsApp
+                </a>
+                <a
+                  href="https://www.instagram.com/__nalsnaaa_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-button"
+                >
+                  <span>◎</span> Instagram
+                </a>
+                <a
+                  href="https://github.com/usernamekamu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-button"
+                >
+                  <span>⌘</span> GitHub
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- MODAL PROYEK 1 -->
     <div
-      style="
-        margin-top: 70px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-      "
+      class="modal fade"
+      id="projectModalOne"
+      tabindex="-1"
+      aria-labelledby="projectTitleOne"
+      aria-hidden="true"
     >
-      <div class="center">
-        <h1>CV LISNAWATI</h1>
-        <hr />
-
-        <div class="profile-header">
-          <img src="./foto.jpg" alt="Foto Lisnawati" />
-          <h2 class="nama">Lisnawati</h2>
-          <p class="nim">(NIM : 2501016)</p>
-        </div>
-
-        <hr class="garis-biru" />
-
-        <p class="prodi">Mahasiswi Teknologi Rekayasa Perangkat Lunak</p>
-        <p class="deskripsi">
-          Mahasiswi yang memiliki ketertarikan dalam bidang teknologi,
-          pemrograman, dan pembuatan website sederhana
-        </p>
-
-        <h2>Biodata</h2>
-        <div class="info">
-          <p>
-            <b>Nama :</b> Lisnawati<br />
-            <b>Tempat Tanggal Lahir :</b> 22 April 2007<br />
-            <b>Status :</b> Mahasiswi<br />
-            <b>Alamat :</b> Lumbung, Ciamis, Jawa Barat
-          </p>
-        </div>
-
-        <h2>Pendidikan</h2>
-        <p>
-          <b>Kampus :</b> Politeknik Manahijul Huda<br />
-          <b>Program Studi :</b> Teknologi Rekayasa Perangkat Lunak<br />
-          Selama pendidikan, saya mempelajari dasar pemrograman dan pengembangan
-          website serta terus berusaha meningkatkan kemampuan di bidang
-          teknologi.
-        </p>
-
-        <h2>Pengalaman</h2>
-        <p>
-          Membuat website sederhana tentang kewirausahaan/toko dalam lingkup
-          project akhir semester 2.<br />
-          Dalam project tersebut, saya belajar membuat tampilan website,
-          menyusun informasi, dan menerapkan dasar HTML serta CSS.
-        </p>
-
-        <div id="proyek-bootstrap" class="mt-4">
-          <h2 class="mb-3">Portofolio & Proyek (Bootstrap)</h2>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <div class="card h-100 border-primary shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Website Kewirausahaan</h5>
-                  <p
-                    class="card-text text-secondary"
-                    style="font-family: Arial, sans-serif; font-size: 14px"
-                  >
-                    Project toko online sederhana yang dibuat menggunakan HTML
-                    dan CSS murni.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card h-100 border-primary shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">
-                    Sistem Informasi Akademik
-                  </h5>
-                  <p
-                    class="card-text text-secondary"
-                    style="font-family: Arial, sans-serif; font-size: 14px"
-                  >
-                    Eksperimen desain antarmuka web kampus menggunakan komponen
-                    Bootstrap.
-                  </p>
-                </div>
-              </div>
-            </div>
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectTitleOne">
+              Website Kewirausahaan
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Proyek website bertema kewirausahaan atau toko. Dalam proyek ini
+            saya mempelajari pembuatan struktur halaman, pengaturan tampilan,
+            dan penyusunan informasi menggunakan HTML dan CSS.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
           </div>
         </div>
-
-        <div id="faq-bootstrap" class="mt-4">
-          <h2 class="mb-3">Informasi Tambahan (FAQ)</h2>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                >
-                  Apa keahlian utama yang sedang dipelajari?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
-              >
-                <div
-                  class="accordion-body"
-                  style="
-                    font-family: Arial, sans-serif;
-                    color: #475569;
-                    font-size: 14px;
-                  "
-                >
-                  Pengembangan web dasar (HTML, CSS), responsive design, dan
-                  pemanfaatan framework Bootstrap.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                >
-                  Bagaimana cara menghubungi saya?
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div
-                  class="accordion-body"
-                  style="
-                    font-family: Arial, sans-serif;
-                    color: #475569;
-                    font-size: 14px;
-                  "
-                >
-                  Anda dapat melihat kontak lengkap pada bagian bawah CV ini
-                  melalui nomor WhatsApp atau Email yang tertera.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h2>Kontak</h2>
-        <div class="info">
-          <p>
-            <b>No HP/WA :</b> 081224820071<br />
-            <b>Email :</b> nawatiii065@email.com<br />
-            <b>Instagram :</b> __nalsnaaa_<br />
-            <b>Tiktok :</b> naaww_.
-          </p>
-        </div>
-
-        <hr />
-        <p class="footer"><b>&copy; 2026 Lisnawati</b></p>
       </div>
     </div>
 
+    <!-- MODAL PROYEK 2 -->
+    <div
+      class="modal fade"
+      id="projectModalTwo"
+      tabindex="-1"
+      aria-labelledby="projectTitleTwo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectTitleTwo">
+              CV Portfolio Website
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Website portfolio pribadi yang dibuat untuk menampilkan profil,
+            riwayat pendidikan, pengalaman, dan proyek pembelajaran menggunakan
+            Bootstrap, HTML, CSS, dan jQuery.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOMBOL KEMBALI KE ATAS -->
+    <button id="backToTop" title="Kembali ke atas" type="button">↑</button>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2026 Lisnawati | Personal Portfolio</p>
+      <p>Designed with Bootstrap</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- JAVASCRIPT DAN JQUERY -->
+    <script>
+      $(document).ready(function () {
+        $("#tombolMotivasi").click(function () {
+          $("#pesanMotivasi").fadeToggle(600);
+        });
+
+        $(".content-section")
+          .hide()
+          .each(function (index) {
+            $(this)
+              .delay(index * 120)
+              .fadeIn(500);
+          });
+
+        $("#darkModeButton").click(function () {
+          $("body").toggleClass("dark-mode");
+
+          if ($("body").hasClass("dark-mode")) {
+            $(this).text("☀️ Light Mode");
+          } else {
+            $(this).text("🌙 Dark Mode");
+          }
+        });
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) {
+            $("#backToTop").fadeIn();
+          } else {
+            $("#backToTop").fadeOut();
+          }
+        });
+
+        $("#backToTop").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 600);
+        });
+      });
+    </script>
   </body>
 </html>
